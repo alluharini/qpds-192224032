@@ -1,0 +1,18 @@
+import matplotlib.pyplot as plt
+
+group1 = {'weight': [50, 60, 70, 80], 'height': [150, 160, 165, 170]}
+group2 = {'weight': [55, 65, 75, 85], 'height': [155, 165, 170, 175]}
+group3 = {'weight': [58, 68, 78, 88], 'height': [158, 168, 173, 178]}
+
+
+plt.scatter(group1['weight'], group1['height'], color='r', label='Group 1')
+plt.scatter(group2['weight'], group2['height'], color='g', label='Group 2')
+plt.scatter(group3['weight'], group3['height'], color='b', label='Group 3')
+
+
+plt.xlabel('Weight')
+plt.ylabel('Height')
+plt.title('Scatter Plot Comparing Weights and Heights for 3 Groups')
+plt.legend()
+
+plt.show()
