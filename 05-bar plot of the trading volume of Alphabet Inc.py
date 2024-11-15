@@ -1,3 +1,14 @@
+import matplotlib.pyplot as plt
+days = [1, 2, 3, 4, 5]
+prices = [150, 155, 160, 158, 162]
+
+plt.bar(days, prices,color='b')
+plt.title('Stock Prices Over 5 Days')
+plt.xlabel('Days')
+plt.ylabel('Price')
+plt.show()
+
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import yfinance as yf
